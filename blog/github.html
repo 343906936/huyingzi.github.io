@@ -2,11 +2,27 @@
 <html>
 
 <head>
-  <title>胡英姿 - 其它</title>
+  <title>胡英姿 - 开源项目</title>
   <meta name="description" content="website description" />
   <meta name="keywords" content="website keywords, website keywords" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <link rel="stylesheet" type="text/css" href="style/style.css" />
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+
+   <!-- 遍历所以的A标签并修改其文字颜色和大小 -->
+  <script type="text/javascript">
+    jQuery(document).ready(function($){
+    　　$('.info_github a').each(function(){
+    　　　　$(this).css({
+              color:"#4183C4",
+              fontSize:"16px"
+            });
+            $(this).attr("target","_blank"); 
+    　　});
+    });
+  </script>
+
+
 </head>
 
 <body>
@@ -16,15 +32,15 @@
         <div id="logo_text">
           <!-- class="logo_colour", allows you to change the colour of the text -->
           <h1><a href="index.html">胡英姿_<span class="logo_colour">Blog </span></a></h1>
-          <h2>如果debugging是一种消灭bug的过程,那编程就一定是把bug放进去的过程!</h2>
+          <h2> 曾梦想仗剑走天涯，奈何爱上撸代码！</h2>
         </div>
       </div>
       <div id="menubar">
         <ul id="menu">
           <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
           <li><a href="index.html">博文导航</a></li>
-          <li><a href="github.html">开源项目</a></li>
-          <li class="selected"><a href="page.html">其它</a></li>
+          <li class="selected"><a href="github.html">开源项目</a></li>
+          <li><a href="page.html">其它</a></li>
           <li><a href="contact.html">联系我</a></li>
         </ul>
       </div>
@@ -56,15 +72,55 @@
           </p>
         </form>
       </div>
-      <div id="content">
+      
+
+
+<div id="content" class="info_github">
+
+
+
         <!-- insert the page content here -->
-        <h1>想说点什么...</h1>
-        <p>这家伙很懒，什么都没有留下。</p>
-        
+        <h1>欢迎光临我的 <a href='https://github.com/CNHubin' style="color: #4183C4"  target="_blank">Github</a></h1>
+
+       
+      
+
+
+<ul>
+<li><a href='https://github.com/CNHubin/ScaleSeekBar'>一个炫酷可控制精度的进度条控件（ScaleSeekBar）</a></li>
+<li><a href='https://github.com/CNHubin/AnimatedExpandableListViewDemo'>一个折叠卡片式的布局（AnimatedExpandableListViewDemo）</a> </li>
+<li>一个有服务端的ble蓝牙库（开发中...）</li>
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
     </div>
     <div id="content_footer"></div>
-      <div id="footer">
+    <div id="footer">
        <p><a href="index.html">博文导航</a> | <a href="github.html">开源项目</a> | <a href="page.html">其它</a> | <a href="contact.html">联系我</a></p>
       <p>Copyright &copy; IT魔幻师 | <a href="https://www.jianshu.com/u/b2756e6fdc05" target="_blank">我的简书</a> |  <a href="https://github.com/CNHubin" target="_blank">Github</a> |<a href="https://cnhubin.github.io/huyingzi.github.io/love/Love.html" target="_blank">真情告白</a></p>
     </div>
