@@ -8,6 +8,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <link rel="stylesheet" type="text/css" href="style/style.css" />
   <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
 </head>
 
 <body>
@@ -66,14 +67,14 @@
         <!-- insert the page content here -->
         <h1>Come to powder me！</h1>
         <p>您在此处提交的消息将会直达我的个人邮箱：</p>
-        <form action="#" method="post">
+        <form action="#" method="post" id='form'>
           <div class="form_settings">
-            <p><span>称呼：</span><input class="contact" type="text" name="your_name" value="" /></p>
-            <p><span>邮箱地址：</span><input class="contact" type="text" name="your_email" value="" /></p>
-            <p><span>想说的话：</span><textarea class="contact textarea" rows="8" cols="50" name="your_enquiry"></textarea></p>
+            <p><span>称呼：</span><input class="contact" type="text" name="your_name" id = 'name' value="" /></p>
+            <p><span>邮箱地址：</span><input class="contact" type="text" name="your_email" id = 'email' value="" /></p>
+            <p><span>想说的话：</span><textarea class="contact textarea" rows="8" cols="50" id = 'msg' name="your_enquiry"></textarea></p>
 
             <p style="padding-top: 15px"><span>&nbsp;
-            </span><input class="submit" type="submit" name="contact_submitted" value="发送" />
+            </span><input class="submit" type="submit" name="contact_submitted"  id="btnget" value="发送" />
             </p>
             
           </div>
@@ -90,5 +91,33 @@
       <p>Copyright &copy; IT魔幻师 | <a href="https://www.jianshu.com/u/b2756e6fdc05" target="_blank">我的简书</a> |  <a href="https://github.com/CNHubin" target="_blank">Github</a> |<a href="https://cnhubin.github.io/huyingzi.github.io/love/Love.html" target="_blank">真情告白</a></p>
     </div>
   </div>
+  <script type="text/javascript">
+    $('#btnget').click(function () {
+      //  3.2 获取数据
+//      var formData = $('#form').serialize();
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var msg = document.getElementById("msg").value;
+      //  3.3 发送ajax请求
+      $.ajax({
+        type: 'post',
+//        async: false,
+        url: 'http://47.106.152.229/email/send_mail',
+        data: {
+          'name':name,
+          'email':email,
+          'msg':msg
+        },
+//        data:formData,
+        dataType: 'json',
+        success:function (data) {
+        }
+//        error:function (XMLHttpRequest, textStatus, errorThrown) {
+//          alert("请求数据异常：" + errorThrown);
+//        }
+      })
+
+    })
+  </script>
 </body>
 </html>
