@@ -176,9 +176,10 @@ ol li {
 
 #menubar {
     width: 100%;
-    height: 46px;
+    height: 38px;
     padding-top: 4px;
     padding-left: 4px;
+    border-bottom: 4px solid  #00C5EE;
 }
 
 ul#menu {
@@ -227,8 +228,8 @@ ul#menu li.selected a, ul#menu li.selected a:hover {
     top: 0;
     right: 0;
     margin: 0px;
-    background-color: #626262;
-    border-bottom: 4px solid  #00C5EE;
+    background-color: #4b4b4b;
+ opacity: 0.99;
 }
 ul#menu li a:hover {
     color: #00C5EE;
