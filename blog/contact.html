@@ -40,7 +40,7 @@
         <!-- insert your sidebar items here -->
         <h3>Latest News</h3>
         <h4>New Website Launched</h4>
-        <h5>January 1st, 2011</h5>
+        <h5>2018年8月20日</h5>
         <p>2011 sees the redesign of our website. Take a look around and let us know what you think.<br /><a href="#">Read more</a></p>
         <p></p>
         <h4>New Website Launched</h4>
@@ -92,17 +92,29 @@
     </div>
   </div>
   <script type="text/javascript">
-    $('#btnget').click(function () {
+    $('#btnget').click(function (e) {
+      e.preventDefault(); //静止ajax和表单重复提交请求！
       //  3.2 获取数据
 //      var formData = $('#form').serialize();
       var name = document.getElementById("name").value;
       var email = document.getElementById("email").value;
       var msg = document.getElementById("msg").value;
+      if (email=="") {
+          alert('请填写您可联系的邮箱地址！');
+        return;
+      }
+      if (msg=="") {
+         alert('请填写您想说的话！');
+        return;
+      }
+
+
       //  3.3 发送ajax请求
       $.ajax({
         type: 'post',
-//        async: false,
+        async: true,  //true 异步发起请求  false 同步发起请求
         url: 'http://47.106.152.229/email/send_mail',
+        // url: 'http://localhost:8080/email/send_mail',
         data: {
           'name':name,
           'email':email,
@@ -110,11 +122,28 @@
         },
 //        data:formData,
         dataType: 'json',
-        success:function (data) {
+        success:function (msg) {
+          console.log(msg);
+          var last=JSON.stringify(msg);
+          var per = $.parseJSON(last);
+
+          switch(per.response){
+            case 'success':
+              alert('发送成功！');
+            break;
+            case 'error':
+              alert(per.error);
+            break;
+            default:
+              alert('未知错误！');
+            break;
+          }
+          
+        },
+        error:function(msg){
+          alert("请求数据异常：" + JSON.stringify(msg));
+
         }
-//        error:function (XMLHttpRequest, textStatus, errorThrown) {
-//          alert("请求数据异常：" + errorThrown);
-//        }
       })
 
     })
