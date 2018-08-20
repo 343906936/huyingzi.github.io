@@ -38,28 +38,26 @@
     <div id="site_content">
       <div class="sidebar">
         <!-- insert your sidebar items here -->
-        <h3>Latest News</h3>
-        <h4>New Website Launched</h4>
+        <h3>最新消息</h3>
+        <h4>个人博客正式上线</h4>
         <h5>2018年8月20日</h5>
-        <p>2011 sees the redesign of our website. Take a look around and let us know what you think.<br /><a href="#">Read more</a></p>
+        <p>最近学习了一些服务端和web的技术，利用业余时间终于个人博客搭建完成了，欢迎留言给我！<br /><a href="#">更多...</a></p>
         <p></p>
-        <h4>New Website Launched</h4>
-        <h5>January 1st, 2011</h5>
-        <p>2011 sees the redesign of our website. Take a look around and let us know what you think.<br /><a href="#">Read more</a></p>
-        <h3>Useful Links</h3>
+
+        <h4>个人博客构想</h4>
+        <h5>2016年5月20日</h5>
+        <p>或许很多程序员都不善言辞，每当有一个想法的时候总是想完美的表达出来却发现讲的并没有那么好，于是我想搭建一个个人博客，用程序员特有的方式来表达个人的想法，搭建一个只属于自己的博客，说自己想说的任何话！
+        <br /><a href="#">更多...</a>
+        </p>
+
+
+        <!-- <h3>Useful Links</h3>
         <ul>
           <li><a href="#">link 1</a></li>
           <li><a href="#">link 2</a></li>
           <li><a href="#">link 3</a></li>
           <li><a href="#">link 4</a></li>
-        </ul>
-        <h3>Search</h3>
-        <form method="post" action="#" id="search_form">
-          <p>
-            <input class="search" type="text" name="search_field" value="Enter keywords....." />
-            <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
-          </p>
-        </form>
+        </ul> -->
       </div>
 
 
@@ -123,13 +121,13 @@
 //        data:formData,
         dataType: 'json',
         success:function (msg) {
-          console.log(msg);
+          // console.log(msg);
           var last=JSON.stringify(msg);
           var per = $.parseJSON(last);
 
           switch(per.response){
             case 'success':
-              alert('发送成功！');
+              alert('您的消息已发送成功,耐心等待站长的回复吧！');
             break;
             case 'error':
               alert(per.error);
@@ -142,7 +140,6 @@
         },
         error:function(msg){
           alert("请求数据异常：" + JSON.stringify(msg));
-
         }
       })
 
