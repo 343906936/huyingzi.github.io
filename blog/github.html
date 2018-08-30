@@ -29,6 +29,7 @@
 <body>
   <div id="main">
     <div id="header">
+
       <div id="logo">
         <div id="logo_text">
           <!-- class="logo_colour", allows you to change the colour of the text -->
@@ -36,6 +37,7 @@
           <h2> 曾梦想仗剑走天涯，奈何爱上撸代码！</h2>
         </div>
       </div>
+
       <div id="menubar">
         <ul id="menu">
           <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
@@ -45,33 +47,36 @@
           <li><a href="contact.html">联系我</a></li>
         </ul>
       </div>
+
     </div>
     <div id="content_header"></div>
     <div id="site_content">
       <div class="sidebar">
         <!-- insert your sidebar items here -->
-        <h3>Latest News</h3>
-        <h4>New Website Launched</h4>
-        <h5>January 1st, 2011</h5>
-        <p>2011 sees the redesign of our website. Take a look around and let us know what you think.<br /><a href="#">Read more</a></p>
+        
+        <h3>最新消息</h3>
+        <h4>RobotBle项目</h4>
+        <h5>2018年8月29日</h5>
+        <div id="unfold">
+          终于有时间将蓝牙进行一些整理，这是一个可以将手机作为外围设备使用的Ble蓝牙Demo,之所以说是demo是因为我在项目中有更多的拓展，由于项目的差异性无法将其全部剔除出来，但是可以通过这个Demo我们对自己的蓝牙进行一些调试查看mac地址等都比较方便！
+        </div>
+        <br />
+        
+
         <p></p>
-        <h4>New Website Launched</h4>
-        <h5>January 1st, 2011</h5>
-        <p>2011 sees the redesign of our website. Take a look around and let us know what you think.<br /><a href="#">Read more</a></p>
-        <h3>Useful Links</h3>
-        <ul>
-          <li><a href="#">link 1</a></li>
-          <li><a href="#">link 2</a></li>
-          <li><a href="#">link 3</a></li>
-          <li><a href="#">link 4</a></li>
-        </ul>
-        <h3>Search</h3>
-        <form method="post" action="#" id="search_form">
-          <p>
-            <input class="search" type="text" name="search_field" value="Enter keywords....." />
-            <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
-          </p>
-        </form>
+        <h4>Utils工具库</h4>
+        <h5>2018年8月29日</h5>
+        <p>一直想将开发中常用的Utils整理出来，最近刚忙完一个项目，这段时间比较空闲，开始整理项目！
+        <a href="https://github.com/CNHubin/Utils" style="color: red"  target="_blank">... 查看</a>
+        <br /></p>
+
+
+        <p></p>
+        <h4>ScaleSeekBar</h4>
+        <h5>2018年3月...</h5>
+        <p>模仿华为的天气刻度盘添加了精度控制和自己定义的seekbar实现炫酷效果 <a href="https://github.com/CNHubin/ScaleSeekBar" style="color: red"  target="_blank">... 查看</a>
+        <br /></p>
+
       </div>
       
 
@@ -88,10 +93,10 @@
 
 
 <ul>
-<li><a href='https://github.com/CNHubin/Utils'>一个Android快捷开发时使用的工具库</a></li>
+<li><a href='https://github.com/CNHubin/Utils'>一个Android快捷开发时使用的工具库(Utils)</a></li>
 <li><a href='https://github.com/CNHubin/ScaleSeekBar'>一个炫酷可控制精度的进度条控件（ScaleSeekBar）</a></li>
 <li><a href='https://github.com/CNHubin/AnimatedExpandableListViewDemo'>一个折叠卡片式的布局（AnimatedExpandableListViewDemo）</a> </li>
-<li>一个有服务端的ble蓝牙库（开发中...）</li>
+<li><a href='https://github.com/CNHubin/RobotBle'>一个可以将手机作为外围设备使用的Ble蓝牙Demo(RobotBle)</a></li>
 
 </ul>
 
@@ -126,4 +131,10 @@
     </div>
   </div>
 </body>
+
+ <script type="text/javascript">
+      //执行展开和收起
+      unfold();
+ </script>
+
 </html>
