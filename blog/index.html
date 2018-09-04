@@ -10,30 +10,36 @@
     <script type="text/javascript" src="js/index.js"></script>
     <style>
         /*#site_content{*/
-            /*position: fixed;*/
+        /*position: fixed;*/
         /*}*/
+        #site_content > .sidebar {
+            position: fixed;
+            right: 350px;
+        }
+
+
     </style>
 
     <!-- 遍历所以的A标签并修改其文字颜色和大小 -->
     <script type="text/javascript">
-       $(function(){
-           jQuery(document).ready(function ($) {
-               $('.info a').each(function () {
-                   $(this).css({
-                       color: "#4183C4",
-                       fontSize: "16px"
-                   });
-                   $(this).attr("target", "_blank");
-               });
+        $(function () {
+            jQuery(document).ready(function ($) {
+                $('.info a').each(function () {
+                    $(this).css({
+                        color: "#4183C4",
+                        fontSize: "16px"
+                    });
+                    $(this).attr("target", "_blank");
+                });
 
-               $('.info h1').each(function () {
-                   $(this).css({
-                       color: "#333333",
-                       fontWeight: "bolder"
-                   });
-               });
-           })
-           })
+                $('.info h1').each(function () {
+                    $(this).css({
+                        color: "#333333",
+                        fontWeight: "bolder"
+                    });
+                });
+            })
+        })
 
     </script>
 
@@ -68,7 +74,7 @@
             <!-- insert your sidebar items here -->
             <h3>目录索引</h3>
             <ul id='nav'>
-             </ul>
+            </ul>
         </div>
         <div id="content" class="info">
             <h1>一、实用工具</h1>
@@ -199,6 +205,7 @@
 
     for (var i = 0; i < tittle.length; i++) {
         var as = document.createElement('a');
+        as.style.fontSize = 18 + 'px';
         as.setAttribute('href', '#title' + i);
         as.innerHTML = tittle[i].innerHTML;
         var index = as.getAttribute('href');
