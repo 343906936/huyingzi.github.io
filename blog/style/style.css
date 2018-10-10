@@ -242,14 +242,15 @@ ul#menu li a:hover {
 }
 .sidebar {
     float: right;
-    width: 178px;
+    width:200px;
     padding: 20px 25px 15px 15px;
 }
 
 .sidebar ul {
-    width: 178px;
+    width: 100%;
     padding-top: 4px;
     margin: 4px 0px 30px 0px;
+    font-weight: 900;
 }
 
 .sidebar li {
