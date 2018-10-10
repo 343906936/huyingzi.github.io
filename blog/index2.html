@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+    <title>胡英姿 - 主页</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css"/>
+    <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <style>
+        /*#site_content{*/
+        /*position: fixed;*/
+        /*}*/
+        #site_content > .sidebar {
+            position: fixed;
+            right: 350px;
+        }
+
+
+    </style>
+
+    <!-- 遍历所以的A标签并修改其文字颜色和大小 -->
+    <script type="text/javascript">
+        $(function () {
+            jQuery(document).ready(function ($) {
+                $('.info a').each(function () {
+                    $(this).css({
+                        color: "#4183C4",
+                        fontSize: "16px"
+                    });
+                    $(this).attr("target", "_blank");
+                });
+
+                $('.info h1').each(function () {
+                    $(this).css({
+                        color: "#333333",
+                        fontWeight: "bolder"
+                    });
+                });
+            })
+        })
+
+    </script>
+
+
+</head>
+
+<body>
+<div id="main">
+    <div id="header">
+        <div id="logo">
+            <div id="logo_text">
+                <!-- class="logo_colour", allows you to change the colour of the text -->
+                <h1><a href="index.html">胡英姿_<span class="logo_colour">Blog </span></a></h1>
+
+                <h2>愿无岁月可回首，且以代码共白头！</h2>
+            </div>
+        </div>
+        <div id="menubar">
+            <ul id="menu">
+                <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+                <li class="selected"><a href="index.html">博文导航</a></li>
+                <li><a href="github.html">开源项目</a></li>
+                <li><a href="page.html">其它</a></li>
+                <li><a href="contact.html">联系我</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="content_header"></div>
+    <div id="site_content">
+        <div class="sidebar">
+            <!-- insert your sidebar items here -->
+            <h3>目录索引</h3>
+            <ul id='nav'>
+            </ul>
+        </div>
+        <div id="content" class="info">
+
+
+
+
+
+
+
+            <h1>一、实用工具</h1>
+            <ul>
+                <li><a href='https://www.jianshu.com/p/1a0726ab4961'>part01_Android_开发神器使用夜神模拟器调试应用</a> </li>
+                <li><a href='https://www.jianshu.com/p/470b72d86d57'>part02_AndroidStudio源码不关联的问题</a> </li>
+                <li><a href='https://www.jianshu.com/p/9c391bff3c33'>part03_Git与TortoiseGit快速安装</a> </li>
+                <li><a href='https://www.jianshu.com/p/8da59586c3f1'>part04_Android高效开发必备插件</a> </li>
+
+            </ul>
+            <h1 data-breakpage>二、Android杂篇</h1>
+            <ul>
+                <li><a href='https://www.jianshu.com/p/4d87182eabf7'>javaEE安装配置Android开发环境</a></li>
+                <li><a href='https://www.jianshu.com/p/fa1143cf1b0f'>你不知道的android黑科技：暗码启动应用程序</a></li>
+                <li><a href='https://www.jianshu.com/p/335cc7f1fd19'>Gradle打包全流程</a> </li>
+                <li><a href='https://www.jianshu.com/p/7aad275745e1'>android集成openCV第一步</a> </li>
+                <li><a href='https://www.jianshu.com/p/dd1c57f5fd72'>Lambda表达式快速掌握指南</a> </li>
+                <li><a href='https://www.jianshu.com/p/fc7c07099943'>跨进程通信(AndroidStudio上使用AIDL)</a> </li>
+                <li><a href='https://www.jianshu.com/p/ab588ffaa40b'>混合开发js与Andorid互调</a></li>
+
+            </ul>
+            <h1 data-breakpage>三、自定义控件</h1>
+            <ul>
+                <li><a href='https://www.jianshu.com/p/d7de86838d1e'>使用ExpandableListView纯手工打造带折叠动画的多条目展示框架</a> </li>
+                <li><a href='https://www.jianshu.com/p/d64b593efeb2'>Android自定义可控制精度带刻度盘和波纹效果的炫酷SeekBar</a> </li>
+
+            </ul>
+            <h1 data-breakpage>四、XML</h1>
+            <ul>
+                <li><a href='https://www.jianshu.com/p/f6747dafcc3d'>Android_shape的使用</a> </li>
+
+            </ul>
+            <h1 data-breakpage>五、性能优化</h1>
+            <ul>
+                <li><a href='https://www.jianshu.com/p/277d2c05afa8'>part01_android应用启动速度优化</a> </li>
+
+            </ul>
+            <h1 data-breakpage>六、常见问题</h1>
+            <ul>
+                <li><a href='https://www.jianshu.com/p/5d6b64ca6c0a'>ListView嵌套RadioGroup时选中混乱现象处理</a> </li>
+                <li><a href='https://www.jianshu.com/p/fc6181c1d29c'>从根源处解决androidStudio打开项目进程卡死的问题</a> </li>
+
+            </ul>
+            <h1 data-breakpage>七、架构师之路</h1>
+            <ul>
+                <li><a href='https://www.jianshu.com/p/cebba6b185c5'>part01_Gradle常用语法</a> </li>
+                <li><a href='https://www.jianshu.com/p/5f9a7bc902e1'>part02_Android组件化配置</a> </li>
+                <li><a href='https://www.jianshu.com/p/2d6fdbb6ead2'>part03_Android编译时注解APT的使用</a> </li>
+                <li><a href='https://www.jianshu.com/p/88e368311f8b'>part04_Rxjava入门</a> </li>
+                <li><a href='https://www.jianshu.com/p/afeba5aea533'>part05_Rxjava操作符</a> </li>
+                <li><a href='https://www.jianshu.com/p/23f74055e999'>part06_Rxjava背压原理</a> </li>
+
+            </ul>
+            <h1 data-breakpage>八、Linux</h1>
+            <ul>
+                <li><a href='https://www.jianshu.com/p/f921491d681e'>阿里云ubuntu服务器环境搭建（纯干货）</a> </li>
+                <li><a href='https://www.jianshu.com/p/d5c168208f92'>NDK历史版本下载</a> </li>
+
+            </ul>
+            <h1 data-breakpage>九、C语言基础</h1>
+            <ul>
+                <li><a href='https://www.jianshu.com/p/dd3ae258eabe'>ndk01.1_C简单语法，数组的定义</a> </li>
+                <li><a href='https://www.jianshu.com/p/b270e8b3bfe3'>ndk01.2_指针，外挂原理</a> </li>
+                <li><a href='https://www.jianshu.com/p/316fceaca61c'>ndk02_指针运算，函数参数与指针，数组指针，二级指针</a> </li>
+                <li><a href='https://www.jianshu.com/p/b7f7feadd3df'>ndk03<em>函数指针</em>内存分配，字符串使用</a> </li>
+                <li><a href='https://www.jianshu.com/p/5531d3952059'>ndk04_结构体,typedef,公用体,枚举</a> </li>
+                <li><a href='https://www.jianshu.com/p/de097204fa55'>ndk05_文件操作，文件加解密，预处理</a> </li>
+
+            </ul>
+            <h1 data-breakpage>十、JNI</h1>
+            <ul>
+                <li><a href='https://www.jianshu.com/p/16cfa39b6d23'>ndk06_jni开发流程，JNIEnv，jni访问java变量</a> </li>
+                <li><a href='https://www.jianshu.com/p/0098a8002a9f'>ndk07_JNI访问java方法，访问java构造，字符串的转换</a> </li>
+                <li><a href='https://www.jianshu.com/p/106f1341c443'>ndk08_JNI数组(快速排序)，引用，异常处理，缓存策略</a> </li>
+                <li><a href='https://www.jianshu.com/p/8c85a368252b'>ndk09_JNI源码分析与JNI动态注册解决javah生成jni超长函数名的问题</a> </li>
+                <li><a href='https://www.jianshu.com/p/da97d575fefe'>ndk10_JNI中链接第三方so库,文件拆分与合并,JNI线程</a> </li>
+                <li><a href='https://www.jianshu.com/p/64a39f12e713'>ndk11_增量更新,哈夫曼算法在windows，linux服务器和安卓客户端的使用</a> </li>
+
+            </ul>
+            <ul>
+                <li><a href='https://www.jianshu.com/p/42b710cff17a'>JNI开发的三种方式</a> </li>
+                <li><a href='https://www.jianshu.com/p/19e42446b10e'>javah命令的使用</a> </li>
+                <li><a href='https://www.jianshu.com/p/620861484ab4'>C语言中打印log到android控制台</a> </li>
+
+            </ul>
+            <h1 data-breakpage>十一、CMake编译</h1>
+            <ul>
+                <li><a href='https://www.jianshu.com/p/e1a96509d8da'>Part01_CMakeLists构建管理多个模块的C代码</a> </li>
+                <li><a href='https://www.jianshu.com/p/ffd475455f63'>Part02_CMakeLists引用源文件的3种方式</a> </li>
+                <li><a href='https://www.jianshu.com/p/3069a6e1d9f6'>Part03_CMakeLists查找指定目录下所有源文件时引发的bug</a> </li>
+
+            </ul>
+            <h1 data-breakpage>十二、FFmpeg</h1>
+            <ul>
+                <li><a href='https://www.jianshu.com/p/a7c88b7a9020'>part01_Linux下使用Cmake构建工程</a> </li>
+                <li><a href='https://www.jianshu.com/p/14be44fdfa6e'>part02_编译android平台使用的FFmpeg动态库</a> </li>
+                <li><a href='https://www.jianshu.com/p/ca83254acec4'>part03<em>牛刀小试</em>视频解码原理-使用ffmpeg将MP4转YUV420P</a> </li>
+                <li><a href='https://www.jianshu.com/p/7a165b9f9fad'>part04_ffmpeg+native_window实现万能视频播放器播放本地视频</a> </li>
+                <li><a href='https://www.jianshu.com/p/806635f2d6cb'>part05_ffmpeg实现本地音频转码pcm输出</a> </li>
+
+            </ul>
+            <h1 data-breakpage>十三、Framework</h1>
+            <ul>
+                <li><a href='https://www.jianshu.com/p/e55bb638ed3d'>part01_搭建ubuntu14.04与Android源码级开发环境</a> </li>
+                <li><a href='https://www.jianshu.com/p/6d5b727571ab'>part02_驱动下载安装和AOSP编译</a> </li>
+
+            </ul>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <div id="content_footer"></div>
+    <div id="footer">
+        <p><a href="index.html">博文导航</a> | <a href="github.html">开源项目</a> | <a href="page.html">其它</a> | <a
+                href="contact.html">联系我</a></p>
+
+        <p>Copyright &copy; IT魔幻师 | <a href="https://www.jianshu.com/u/b2756e6fdc05" target="_blank">我的简书</a> | <a
+                href="https://github.com/CNHubin" target="_blank">Github</a> |<a
+                href="http://www.huyingzi.top/github_blog/love/Love.html" target="_blank">真情告白</a></p>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    var nav = document.getElementById('nav');
+
+    var content = document.getElementById('content');
+    var tittle = content.getElementsByTagName('h1');
+
+    for (var i = 0; i < tittle.length; i++) {
+        var as = document.createElement('a');
+        as.style.fontSize = 18 + 'px';
+        as.setAttribute('href', '#title' + i);
+        as.innerHTML = tittle[i].innerHTML;
+        var index = as.getAttribute('href');
+        index = index.substring(1, index.length);
+        tittle[i].setAttribute('id', index);
+        var lis = document.createElement('li');
+        lis.appendChild(as);
+        nav.appendChild(lis);
+    }
+</script>

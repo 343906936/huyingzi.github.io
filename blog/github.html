@@ -2,141 +2,124 @@
 <html>
 
 <head>
-  <title>胡英姿 - 开源项目</title>
-  <meta name="description" content="website description" />
-  <meta name="keywords" content="website keywords, website keywords" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <link rel="stylesheet" type="text/css" href="style/style.css" />
-  <script type="text/javascript" src="js/index.js"></script>
-<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+    <title>胡英姿 - 开源项目</title>
+    <meta name="description" content="website description"/>
+    <meta name="keywords" content="website keywords, website keywords"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style/style.css"/>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
 
-   <!-- 遍历所以的A标签并修改其文字颜色和大小 -->
-  <script type="text/javascript">
-    jQuery(document).ready(function($){
-    　　$('.info_github a').each(function(){
-    　　　　$(this).css({
-              color:"#4183C4",
-              fontSize:"16px"
+    <!-- 遍历所以的A标签并修改其文字颜色和大小 -->
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('.info_github a').each(function () {
+                $(this).css({
+                    color: "#4183C4",
+                    fontSize: "16px"
+                });
+                $(this).attr("target", "_blank");
             });
-            $(this).attr("target","_blank"); 
-    　　});
-    });
-  </script>
+        });
+    </script>
 
 
 </head>
 
 <body>
-  <div id="main">
+<div id="main">
     <div id="header">
 
-      <div id="logo">
-        <div id="logo_text">
-          <!-- class="logo_colour", allows you to change the colour of the text -->
-          <h1><a href="index.html">胡英姿_<span class="logo_colour">Blog </span></a></h1>
-          <h2> 曾梦想仗剑走天涯，奈何爱上撸代码！</h2>
+        <div id="logo">
+            <div id="logo_text">
+                <!-- class="logo_colour", allows you to change the colour of the text -->
+                <h1><a href="index.html">胡英姿_<span class="logo_colour">Blog </span></a></h1>
+                <h2> 曾梦想仗剑走天涯，奈何爱上撸代码！</h2>
+            </div>
         </div>
-      </div>
 
-      <div id="menubar">
-        <ul id="menu">
-          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
-          <li><a href="index.html">博文导航</a></li>
-          <li class="selected"><a href="github.html">开源项目</a></li>
-          <li><a href="page.html">其它</a></li>
-          <li><a href="contact.html">联系我</a></li>
-        </ul>
-      </div>
+        <div id="menubar">
+            <ul id="menu">
+                <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+                <li><a href="index.html">博文导航</a></li>
+                <li class="selected"><a href="github.html">开源项目</a></li>
+                <li><a href="page.html">其它</a></li>
+                <li><a href="contact.html">联系我</a></li>
+            </ul>
+        </div>
 
     </div>
     <div id="content_header"></div>
     <div id="site_content">
-      <div class="sidebar">
-        <!-- insert your sidebar items here -->
-        
-        <h3>最新消息</h3>
-        <h4>RobotBle项目</h4>
-        <h5>2018年8月29日</h5>
-        <div id="unfold">
-          终于有时间将蓝牙进行一些整理，这是一个可以将手机作为外围设备使用的Ble蓝牙Demo,之所以说是demo是因为我在项目中有更多的拓展，由于项目的差异性无法将其全部剔除出来，但是可以通过这个Demo我们对自己的蓝牙进行一些调试查看mac地址等都比较方便！
+        <div class="sidebar">
+            <!-- insert your sidebar items here -->
+
+            <h3>最新消息</h3>
+            <h4>RobotBle项目</h4>
+            <h5>2018年8月29日</h5>
+            <div id="unfold">
+                终于有时间将蓝牙进行一些整理，这是一个可以将手机作为外围设备使用的Ble蓝牙Demo,之所以说是demo是因为我在项目中有更多的拓展，由于项目的差异性无法将其全部剔除出来，但是可以通过这个Demo我们对自己的蓝牙进行一些调试查看mac地址等都比较方便！
+            </div>
+            <br/>
+
+
+            <p></p>
+            <h4>Utils工具库</h4>
+            <h5>2018年8月29日</h5>
+            <p>一直想将开发中常用的Utils整理出来，最近刚忙完一个项目，这段时间比较空闲，开始整理项目！
+                <a href="https://github.com/CNHubin/Utils" style="color: red" target="_blank">... 查看</a>
+                <br/></p>
+
+
+            <p></p>
+            <h4>ScaleSeekBar</h4>
+            <h5>2018年3月...</h5>
+            <p>模仿华为的天气刻度盘添加了精度控制和自己定义的seekbar实现炫酷效果 <a href="https://github.com/CNHubin/ScaleSeekBar" style="color: red"
+                                                       target="_blank">... 查看</a>
+                <br/></p>
+
         </div>
-        <br />
-        
-
-        <p></p>
-        <h4>Utils工具库</h4>
-        <h5>2018年8月29日</h5>
-        <p>一直想将开发中常用的Utils整理出来，最近刚忙完一个项目，这段时间比较空闲，开始整理项目！
-        <a href="https://github.com/CNHubin/Utils" style="color: red"  target="_blank">... 查看</a>
-        <br /></p>
 
 
-        <p></p>
-        <h4>ScaleSeekBar</h4>
-        <h5>2018年3月...</h5>
-        <p>模仿华为的天气刻度盘添加了精度控制和自己定义的seekbar实现炫酷效果 <a href="https://github.com/CNHubin/ScaleSeekBar" style="color: red"  target="_blank">... 查看</a>
-        <br /></p>
-
-      </div>
-      
+        <div id="content" class="info_github">
 
 
-<div id="content" class="info_github">
+            <!-- insert the page content here -->
+            <h1>欢迎光临我的 <a href='https://github.com/CNHubin' style="color: #4183C4" target="_blank">Github</a></h1>
 
 
+            <ul>
+                <li><a href='https://github.com/CNHubin/Utils'>一个Android快捷开发时使用的工具库(Utils)</a></li>
+                <li><a href='https://github.com/CNHubin/ScaleSeekBar'>一个炫酷可控制精度的进度条控件（ScaleSeekBar）</a></li>
+                <li><a href='https://github.com/CNHubin/AnimatedExpandableListViewDemo'>一个折叠卡片式的布局（AnimatedExpandableListViewDemo）</a>
+                </li>
+                <li><a href='https://github.com/CNHubin/RobotBle'>一个可以将手机作为外围设备使用的Ble蓝牙Demo(RobotBle)</a></li>
+                <li><a href='https://github.com/CNHubin/SvgParser'>一个矢量图解析器(SvgParser)</a></li>
+                <li><a href='https://github.com/CNHubin/OpenGlDemo'>OpenGl入门（OpenGlDemo）</a></li>
+                <li><a href='https://github.com/CNHubin/AndTomcat'>一个基于Android局域网搭建http服务器的Demo（AndTomcat）</a></li>
 
-        <!-- insert the page content here -->
-        <h1>欢迎光临我的 <a href='https://github.com/CNHubin' style="color: #4183C4"  target="_blank">Github</a></h1>
-
-       
-      
-
-
-<ul>
-<li><a href='https://github.com/CNHubin/Utils'>一个Android快捷开发时使用的工具库(Utils)</a></li>
-<li><a href='https://github.com/CNHubin/ScaleSeekBar'>一个炫酷可控制精度的进度条控件（ScaleSeekBar）</a></li>
-<li><a href='https://github.com/CNHubin/AnimatedExpandableListViewDemo'>一个折叠卡片式的布局（AnimatedExpandableListViewDemo）</a> </li>
-<li><a href='https://github.com/CNHubin/RobotBle'>一个可以将手机作为外围设备使用的Ble蓝牙Demo(RobotBle)</a></li>
-<li><a href='https://github.com/CNHubin/SvgParser'>一个矢量图解析器(SvgParser)</a></li>
-<li><a href='https://github.com/CNHubin/OpenGlDemo'>OpenGl入门（OpenGlDemo）</a></li>
-<li><a href='https://github.com/CNHubin/AndTomcat'>一个基于Android局域网搭建http服务器的Demo（AndTomcat）</a></li>
-
-</ul>
+            </ul>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
+        </div>
     </div>
     <div id="content_footer"></div>
     <div id="footer">
-       <p><a href="index.html">博文导航</a> | <a href="github.html">开源项目</a> | <a href="page.html">其它</a> | <a href="contact.html">联系我</a></p>
-      <p>Copyright &copy; IT魔幻师 | <a href="https://www.jianshu.com/u/b2756e6fdc05" target="_blank">我的简书</a> |  <a href="https://github.com/CNHubin" target="_blank">Github</a> |<a href="http://www.huyingzi.top/github_blog/love/Love.html" target="_blank">真情告白</a></p>
+        <p><a href="index.html">博文导航</a> | <a href="github.html">开源项目</a> | <a href="page.html">其它</a> | <a
+                href="contact.html">联系我</a></p>
+        <p>Copyright &copy; IT魔幻师 |
+            <a href="https://www.jianshu.com/u/b2756e6fdc05" target="_blank">我的简书</a> |
+            <a href="https://github.com/CNHubin" target="_blank">Github</a> |
+            <a href="http://www.huyingzi.top/github_blog/love/Love.html" target="_blank">真情告白</a>|
+            <a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备18110112号</a>
+        </p>
     </div>
-  </div>
+</div>
 </body>
 
- <script type="text/javascript">
-      //执行展开和收起
-      unfold();
- </script>
+<script type="text/javascript">
+    //执行展开和收起
+    unfold();
+</script>
 
 </html>

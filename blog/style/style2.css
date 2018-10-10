@@ -1,0 +1,244 @@
+/*公共样式开始*/
+html, h1, h2, h3, h4, h5, h6, p, img, ul, li, ol, button, body {
+    padding: 0;
+    margin: 0;
+}
+
+input, button, img {
+    border: none;
+    outline-style: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+textarea {
+    resize: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:before, .clearfix:after {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.w {
+    margin: 0 auto;
+    width: 1190px;
+}
+
+html {
+    height: 100%;
+}
+
+/*共公样式结束*/
+.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+}
+.fixed1{
+    position: fixed;
+    top:50px;
+    margin-top: 20px;
+    width: 250px;
+    height: 400px;
+    border: 2px solid #8d8d8d;
+    right:80px;
+    border-radius: 10px;
+    background: #e8e8e8;
+    /*overflow: hidden;*/
+}
+.as{
+    display: inline-block;
+    line-height: 30px;
+    padding-left: 8px;
+    cursor: pointer;
+    width: 100%;
+}
+.as:hover{
+    color: red;
+    background: #b9b9b9;
+}
+/*头部的开始*/
+.log {
+    width: 100%;
+    height: 127px;
+}
+
+.log h1 a {
+    display: inline-block;
+    color: #221e1f;
+    height: 80px;
+    line-height: 80px;
+    text-decoration: none;
+}
+
+.log h1 span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.log #logo_text p {
+    font-weight: 900;
+    color: #666666;
+    font-family: cursive;
+    font-size: 18px;
+    padding-left: 100px;
+}
+
+.log #logo_text p:hover {
+    cursor: pointer;
+}
+
+/*头部的结束*/
+
+/*导航的开始*/
+.nav {
+    width: 100%;
+    height: 50px;
+    background-color: #231F20;
+    border-bottom: 3px solid royalblue;
+}
+
+.nav > #menu {
+    list-style: none;
+}
+
+.nav > #menu > li {
+    float: right;
+    line-height: 50px;
+}
+
+.nav > #menu > li > a {
+    display: inline-block;
+    text-align: center;
+    padding: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.nav > #menu > li > a:hover {
+    border-radius: 5px;
+    background: royalblue;
+}
+
+/*导航的结束*/
+
+/*内容的开始*/
+.content {
+    padding: 20px 0;
+    /*background: #f6f6f6;*/
+    display: flex;
+    /*子元素在父容器的排列方式*/
+    justify-content: space-around;
+    /*侧轴元素的排列方式*/
+    align-items: center;
+    position: relative;
+}
+
+.content .ctt {
+    flex: 5;
+}
+.content .ctt > h2 {
+    width: 650px;
+    border-bottom: 2px solid silver;
+    font-size: 22px;
+    line-height: 35px;
+}
+
+.content .ctt ul {
+    padding: 10px 0;
+    padding-left: 20px;
+}
+
+.content .ctt ul li a {
+    font-size: 18px;
+    display: inline-block;
+    line-height: 40px;
+    text-decoration: none;
+    color: #221e1f;
+}
+.content .ctt ul li a:hover {
+    color: red;
+}
+/*内容的目录区*/
+.content .index{
+    margin-top: 20px;
+    width: 250px;
+    height:400px;
+    border: 2px solid #8d8d8d;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    border-radius: 10px;
+    background: #e8e8e8;
+    box-sizing: border-box;
+}
+#index h3{
+    height: 50px;
+    background: #8d8d8d;
+    line-height: 50px;
+    padding-left: 5px;
+    border-top-radius: 7px;
+
+}
+#index h3:hover{
+    color: red;
+}
+
+#index ul{
+    width: 100%;
+    height: 340px;
+    padding-top: 10px;
+    list-style: none;
+    overflow: hidden;
+    overflow: auto;
+}
+/*content的结始*/
+
+/*footer的开始*/
+.footer {
+    width: 100%;
+    height: 80px;
+    padding: 10px 0;
+    background: #322c2e;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.footer p {
+    line-height: 30px;
+    color: white;
+    font-size: 14px;
+}
+
+.footer p a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer p a:hover {
+    border-bottom: 1px solid red;
+}
+/*footer的结始*/
+
+

@@ -18,11 +18,11 @@ window.onload = function(){
             //解决一个小bag
             third.style.marginTop =second.scrollHeight+"px";
         }else{
-            second.className  = ""
+            second.className  = "";
             third.style.marginTop =0;
         }
     }
-}
+};
 //        获取页面被卷去的头部和左侧部分。
 function scroll() {
     return {
@@ -56,7 +56,7 @@ function unfold(){
                 a.innerHTML = "... 展开";
                 span.innerHTML = content.substring(0,len);
             }
-        }
+        };
         // 设置div内容为空，span元素 a元素加入到div中
         ctn.innerHTML = "";
         ctn.appendChild(span);
